@@ -1,0 +1,19 @@
+{
+	"name": "jstidd/ampersand",
+	"description": "Simple Templates in PHP",
+	"authors": [
+		{
+			"name": "Jason Stidd",
+			"email": "jason.stidd@utah.edu"
+		
+		}
+	],
+	"require": {
+		"bobthecow/mustache": "2.9.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"Ampersand": "src/"
+		}
+	}
+}
