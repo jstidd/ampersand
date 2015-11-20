@@ -45,7 +45,7 @@ class Ampersand
 	private $template_list_array = array();
 	
 	//can override mustache with the setMustache method
-	private $mustache = new \Mustache\Mustache_Engine;
+	private $mustache;
 
 	/**
 	* Get receives content from put. If there is no matching put
@@ -110,12 +110,6 @@ class Ampersand
 		$this->data = $data;
 	}
 	
-
-	// pass in mustache
-	public function setMustache($mustache) {
-		$this->mustache = $mustache;
-	}
-
 	/**
 	* render is the function to call Ampersand
 	*
@@ -289,7 +283,7 @@ class Ampersand
 	*/
 	private function mustache($string) {
 		// will pass in mustache
-		//$m = new \Mustache\Mustache_Engine;
+		$this->mustache = new \Mustache_Engine;
 		return $this->mustache->render($string, $this->data);
 	}
 
