@@ -1,4 +1,9 @@
 #Ampersand
+
+##UPDATE
+
+Ampersand has changed into a small framework. I have added a simple DB connection to MySQL based on PDO and a Router. The Ampersand templates have been renamed to Template. 
+
 ##PHP Template Engine
 
 I wanted a way to combine templates, like in other template engines, while being able to use Mustache. Ampersand was born for that reason and currently this is all it does.

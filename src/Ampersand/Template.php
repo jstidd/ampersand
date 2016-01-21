@@ -1,7 +1,7 @@
-<?php
+?php
 
 /**
-* Ampersand is a web template engine for PHP
+* Template (formerly Ampersand) is a web template engine for PHP
 *
 * Currently Ampersand combines templates files and runs the result
 * thought mustache (https://github.com/bobthecow/mustache.php).
@@ -34,7 +34,7 @@
 
 namespace Ampersand;
 
-class Ampersand
+class Template
 {
 
 	//hold data used in mustache	
