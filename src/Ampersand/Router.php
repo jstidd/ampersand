@@ -82,7 +82,7 @@ class Router
 		$uri = preg_split('/\//', $request_uri);	
 
 		// array of variables from URI
-		$var_array = [];
+		$var_array = array();
 		
 		if(count($route) === count($uri)) {
 
