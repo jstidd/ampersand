@@ -20,9 +20,10 @@ class Router
 				}
 				
 				$handler($variables_array);
+				return true;
 			}	
 		}
-				
+		return false;			
 	}
 
 	public static function route_matches($expected_route, $request_uri, $regex = array())
